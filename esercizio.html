@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
+        body 
+        {
             background-color: #f4f4f4;
             color: #333;
             font-family: 'Arial', sans-serif;
@@ -13,48 +14,56 @@
             padding: 0;
         }
 
-        header {
-            background-color: #333;
+        header 
+        {
+            background-color: rgb(41, 53, 212);
             color: #fff;
             text-align: center;
             padding: 10px;
         }
 
-        section {
+        section 
+        {
             margin: 20px;
         }
 
-        img {
+        img 
+        {
             max-width: 20%;
             height: auto;
             border-radius: 50%;
         }
 
-        #contactForm {
+        #contactForm 
+        {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 10px;
         }
 
-        label {
+        label 
+        {
             margin-bottom: 5px;
         }
 
         input,
-        textarea {
+        textarea 
+        {
             width: 100%;
             padding: 8px;
             box-sizing: border-box;
         }
 
-        input[type="submit"] {
-            background-color: #333;
+        input[type="submit"] 
+        {
+            background-color: rgb(33, 72, 199);
             color: #fff;
             cursor: pointer;
         }
 
-        input[type="submit"]:hover {
-            background-color: #555;
+        input[type="submit"]:hover
+        {
+            background-color: rgb(31, 85, 235);
         }
     </style>
     <title>sito - Sito Personale</title>
@@ -71,7 +80,8 @@
         <h2>Skills</h2>
         <ul>
             <li>html</li>
-            <li>js</li>
+            <li>js (poco)</li>
+            <li>css</li>
             <!-- Aggiungi ulteriori skills secondo necessità -->
         </ul>
         <h2>Esperienze Lavorative</h2>
@@ -95,9 +105,11 @@
     </section>
 
     <script>
-        function validateForm() {
+        function validateForm() 
+        {
             var email = document.getElementById('email').value;
-            if (!email.includes('@')) {
+            if (!email.includes('@')) 
+            {
                 alert('Inserisci un indirizzo email valido.');
                 return false;
             }
