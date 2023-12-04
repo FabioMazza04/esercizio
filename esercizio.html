@@ -41,12 +41,6 @@
             gap: 10px;
         }
 
-        label 
-        {
-            margin-bottom: 5px;
-        }
-
-        input,
         textarea 
         {
             width: 100%;
@@ -59,6 +53,7 @@
             background-color: rgb(33, 72, 199);
             color: #fff;
             cursor: pointer;
+            
         }
 
         input[type="submit"]:hover
@@ -75,8 +70,8 @@
     </header>
 
     <section id="bio">
-        <img src="immagine.jpg" alt="sito">
-        <p>questa è la mia biografia prof...</p>
+        <img src="immagine1.png" alt="sito">
+        <p>Questa è la biografia di fabio mazza , in questo sito troverai le mie skills e le mie esperienze lavorative. <br> in fondo alla pagina invece i miei contatti</p>
         <h2>Skills</h2>
         <ul>
             <li>html</li>
@@ -91,15 +86,16 @@
     <section id="contact">
         <h2>Contattami</h2>
         <form id="contactForm" onsubmit="return validateForm()">
-            <label for="name">Nome: fabio</label>
-            <input type="text" id="name" name="name" required>
+            Nome: fabio
+            <input type="text" id="name" name="name" placeholder="nome..." required>
 
-            <label for="email">Email: fabiomazza0211@gmail.com</label>
-            <input type="email" id="email" name="email" required>
+            Email: fabiomazza0211@gmail.com
+            <input type="email" id="email" name="email" placeholder="email..." required>
 
-            <label for="message">Messaggio: contattami </label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            Messaggio: contattami
+            <textarea id="message" name="message" rows="4" placeholder="Digita messaggio..." required></textarea>
 
+            <p></p>
             <input type="submit" value="Invia">
         </form>
     </section>
